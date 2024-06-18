@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "Idroid";
+    src: url(../fonts/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color0: #C5EBD6;
+    --color1: #83E1AD;
+    --color2: #3DDC84;
+    --color3: #2FA866;
+    --color4: #063D1E;
+    --color5: #000000;
+    --color6: #ffffff;
+
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: 'Bebas Neue', sans-serif;
+    --android-font: 'Idroid', cursive;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--color0);
+}
+
+h1 {
+    font-family: var(--android-font);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: var(--android-font);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: var(--primary-font);
+}
+
+p {
+    margin: 15px 0px;
+}
+
+.external::after {
+    content: "\00A0\1F517";
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--color3), var(--color4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+nav {
+    background-color: var(--color4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 30px 15px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--color6);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+aside {
+    background-color: var(--color1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+footer {
+    background-color: #063D1E;
+    text-align: center;
+    color: var(--color3);
+    font-size: 0.8em;
+    padding: 8px;
+}
+
+header > h1 {
+    font-family: var(--secondary-font);
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+header > p {
+    color: var(--color6);
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+
+    max-width: 600px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav a {
+    color: var(--color0);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+nav a:hover {
+    background-color: var(--color3);
+    color: var(--color4);
+}
+
+main h1 {
+    font-family: var(--android-font);
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.8em;
+    color: var(--color4);
+    padding-bottom: 10px;
+}
+
+main h2 {
+    color: var(--color4);
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    font-weight: normal;
+    font-size: 1.3em;
+    text-indent: 8px;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+main img {
+    width: 100%;
+}
+
+.small-picture {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main strong {
+    color: var(--color4);
+    font-weight: bold;
+    padding: 0px 4px;
+}
+
+main a {
+    background-color: var(--color0);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+.video {
+    background-color: var(--color4);
+    margin: 0px -15.5px 30px -15.5px;
+    padding: 20px;
+    padding-bottom: 56%;
+
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside h3 {
+    background-color: var(--color3);
+    color: var(--color6);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-type: "\1F5F8\00A0\00A0";
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+footer a {
+    color: var(--color6);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--color0);
+}

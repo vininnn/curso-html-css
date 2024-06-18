@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: darkcyan;
+        }
+
+        header {
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 4px 4px 5px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 3px 2px 2px chocolate;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: chocolate;
+            padding: 2px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: cornsilk;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            background-color: antiquewhite;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #assunto {
+            color: chocolate;
+        }
+
+        article > p {
+            text-align: justify;
+        }
+
+        article > aside {
+            background-color: black;
+            color: white;
+        }
+
+        footer {
+            background-color: azure;
+            text-align: center;
+            border-radius: 5px;
+            padding: 2px;
+            margin-top: 10px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site Doido</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <h2>Assunto</h2>
+        </section>
+        <section id="noticias">
+            <article>
+                <h3>Notícia</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum tenetur sit omnis reprehenderit inventore assumenda ratione quasi labore tempore nostrum, nulla debitis sequi officiis, dolorum vel. In blanditiis ducimus harum?</p>
+            </article>
+            <article>
+                <aside>
+                    <p>Artigo desenvolvido por Vinin</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por VininSapequinha.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

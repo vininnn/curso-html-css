@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Abra esse site em um celular ou tablet, ou simplesmente, diminua e aumente o tamanho da aba do seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto Flexivel Grande">
+    </picture>
+    <h1>Áudios</h1>
+    <p>Vamos parender a reproduzir sons em HTML5</p>
+    <p>Normalmente os formatos padrão de áudio são: MP3, OGG e WAV</p><!--Não é muito aconselhavel usar WAV por ele ser muito pesado-->
+    <audio src="midia/goku-drip.mp3" controls loop></audio><br>
+    <audio preload="metadata" autoplay controls><!--Atualmente, os navegadores não permitem mais autoplay, provavelmente esta relacionado a políticas de privacidade.-->
+        <source src="midia/pananana.mp3" type="audio/mpeg">
+        <source src="midia/pananana.ogg" type="audio/ogg">
+        <source src="midia/pananana.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir o áudio. <a href="midia/pananana.mp3" download="midia/pananana.mp3" type="audio/mpeg">clique aqui para baixa-lo!</a></p>
+    </audio><!--Nesse caso, seu navegador vai, por ordem, testando qual formato será compatível e vai carregar. Caso ele não carregue aparecerá a mensagem.-->
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Hospedando Vídeos Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="560px" poster="imagens/ponte-thumbnail.png" controls loop>
+        <source src="midia/andando-na-ponte.mp4" type="video/mp4">
+        <source src="midia/andando-na-ponte.m4v" type="video/mp4">
+        <source src="midia/andando-na-ponte.webm" type="video/webm">
+        <source src="midia/andando-na-ponte.ogv" type="video/ogv">
+        <p>Seu navegador não suporta o vídeo. <a href="midia/andando-na-ponte.mp4" download="midia/andando-na-ponte.mp4" type="video/mp4">Clique aqui para baixa-lo!</a></p>
+    </video><!--Arquivos OGV não são muito recomendados, por conta de peso, além de que a maioria dos navegadores suportam os outros formatos.-->
+    <h1>Inserindo Vídeos Externos</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sCG7D4wy7Fg?si=p5teE7Uha62OaYeg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--Existem 2 principais sites para hospedar videos dessa forma, Youtube e Vimeo. YouTube: Sua principal vantagem é que seus servidores são ultra rápidos. Por outro lado, os vídeos utilizados devem ser públicos e disponíveis. Vimeo: Ele permite limitar quem vai poder ver o vídeo. Como desvantagens desse serviço, ele é pago por uma taxa anual e seus algoritmos não são tão eficientes quanto os do YouTube, logo os vídeos apresentam pequenos travamentos às vezes. -->
+</body>
+</html>

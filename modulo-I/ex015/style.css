@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* Tudo que possui o '@' é considerado uma "regra" no CSS. Regra '@charset' caso haja probelemas com acentuação*/ 
+
+body {
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: bisque;
+}
+h1 {
+   color: black; 
+}
+p {
+    text-align: justify;
+    background-color: dimgray;
+}
+a {
+    color: floralwhite;
+    background-color: gray;
+    position: absolute;;
+}
