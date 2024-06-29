@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            border: 3px solid black;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .escuro {
+            background-color: lightslategrey;
+        }
+
+        .destaque {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1>
+    <!-- Hierarquia de Tabelas 
+        Table = tabela
+            Table Row = linha de tabela
+                Table Header = cabeçalho de tabela
+                Table Data = dados de tabela -->
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr class="escuro">
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+        </tr>
+        <tr class="escuro">
+            <td>A4</td>
+            <td>B4</td>
+            <td class="destaque">C4</td>
+            <td>D4</td>
+        </tr>
+    </table>
+</body>
+</html>
