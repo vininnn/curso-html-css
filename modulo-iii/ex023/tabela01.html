@@ -7,6 +7,7 @@
     <style>
         table {
             width: 300px;
+            height: 200px;
             border-collapse: collapse;
             border: 3px solid black;
         }
@@ -14,6 +15,8 @@
         td {
             border: 1px solid black;
             padding: 5px;
+            text-align: center;
+            vertical-align: bottom;
         }
 
         .escuro {
@@ -22,6 +25,11 @@
 
         .destaque {
             background-color: bisque;
+        }
+
+        .numero {
+            text-align: left;
+            vertical-align: top;
         }
     </style>
 </head>
@@ -37,13 +45,13 @@
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
-            <td>D1</td>
+            <td class="numero">D1</td>
         </tr>
         <tr class="escuro">
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
-            <td>D2</td>
+            <td class="numero">D2</td>
         </tr>
         <tr>
             <td>A3</td>
